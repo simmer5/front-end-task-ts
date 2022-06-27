@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { useAppSelector, useAppDispatch } from '../../Redux/hooks'
 import { useSelector, useDispatch } from 'react-redux'
 import {
 	setUserName,
@@ -16,9 +17,11 @@ import { IconLogin } from '../../components/Icons/IconLogin'
 
 const Login = () => {
 	const dispatch = useDispatch()
+	//const dispatch = useAppDispatch()
 	const navigate = useNavigate()
 
 	const userCredentials = useSelector(state => state.userDataStore.credentials)
+	//const userCredentials = useAppSelector(state => state.credentials.value)
 
 	const handleLogin = async e => {
 		e.preventDefault()
