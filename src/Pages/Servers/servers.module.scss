@@ -1,0 +1,20 @@
+.container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.navContainer {
+	height: 6%;
+}
+.statsContainer {
+	height: 15%;
+	justify-items: center;
+	align-items: center;
+	display: flex;
+	border-top: 1px solid #e6e6e6;
+	background-color: #f2f2f2;
+}
+
+.contentContainer {
+	max-height: 85%;
+}

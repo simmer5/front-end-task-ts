@@ -1,0 +1,39 @@
+.table {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #e6e6e6;
+	background-color: #fff;
+	font-size: 0.8rem;
+	height: 100%;
+
+	.col1 {
+		justify-content: start;
+		padding-left: 2rem;
+	}
+	.col2 {
+		justify-content: end;
+		padding-right: 2rem;
+	}
+}
+.table tbody {
+	overflow: auto;
+	max-height: 100%;
+}
+.table thead {
+	color: #999999;
+	background-color: #f2f2f2;
+	text-transform: uppercase;
+}
+.table thead tr,
+.table tbody tr {
+	display: flex;
+}
+.table tbody tr + tr {
+	border-top: 1px solid #e6e6e6;
+}
+.table thead tr th,
+.table tbody tr td {
+	display: flex;
+	flex: 1;
+	padding: 0.5em;
+}

@@ -1,0 +1,20 @@
+.btnContainer {
+	position: relative;
+	.button {
+		border: 1.8px solid #0015ff;
+		background-color: #ffffff;
+		padding: 0.5rem 1rem 0.5rem 2rem;
+		cursor: pointer;
+		margin-right: 1rem;
+		&:hover {
+			border-color: #99cc33;
+		}
+	}
+	.icon {
+		margin-left: 0.5rem;
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

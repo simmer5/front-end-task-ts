@@ -1,0 +1,13 @@
+.container {
+	border: 1px solid #fff;
+
+	display: flex;
+	flex-direction: column;
+
+	flex-grow: 1;
+}
+
+.infoText {
+	text-decoration-line: underline;
+	font-size: 0.8rem;
+}
